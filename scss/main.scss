@@ -8,7 +8,7 @@
 body {
   @include background;
   background: $primary-color;
-  color: #ffffff;
+  color: #f0f0f0;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,7 +18,7 @@ body {
 // headings
 h1, h2, h3 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 626;
 
   &.lg-heading {
     font-size: 6rem;
@@ -32,7 +32,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: #ffffff;
+  color: #f0f0f0;
   text-decoration: none;
 }
 
