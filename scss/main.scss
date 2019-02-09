@@ -58,7 +58,8 @@ main {
 
       &:hover {
         color: $secondary-color;
-        @include ease();
+        @include ease;
+
       }
     }
   }
