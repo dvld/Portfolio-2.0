@@ -123,12 +123,25 @@ main {
   img {
     width: 100%;
     border: 3px solid $primary-color;
+    margin-top: 0.5rem;
 
     &:hover {
       opacity: 0.5;
       border-color: set-second-color($primary-color);
       @include ease;
     }
+  }
+
+  .project-title {
+    border-bottom: 2px solid #989898;
+    border-right: 2px solid #989898;
+    border-radius: 9px;
+    padding: 5px 10px;
+    margin: 2px;
+    width: 100%;
+    color: set-text-color($primary-color);
+    background-color: $primary-color;
+    justify-items: center;
   }
 }
 
@@ -163,8 +176,9 @@ main {
 .button {
   display: block;
   padding: 0.5rem 1rem;
-  border: 0;
+  border: 1px solid set-text-color($primary-color);
   margin-bottom: 0.3rem;
+  
 
   &:hover {
     background: set-second-color($primary-color);
@@ -176,12 +190,14 @@ main {
   @extend .button;
   background: darken($primary-color, 50);
   color: #fff;
+  border-radius: 26px;
 }
 
 .button-light {
   @extend .button;
   background: lighten($primary-color, 50);
   color: #000;
+  border-radius: 26px;
 }
 
 #main-footer {

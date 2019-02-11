@@ -1,4 +1,4 @@
-$primary-color: #fff;
+$primary-color: #000;
 $secondary-color: #0cbbde;
 $tertiary-color: #ee5f5f;
 $show-image: true;
@@ -7,7 +7,7 @@ $background-opacity: 0.8;
 
 @mixin shrinkAndEase {
   transform: scale(0.9);
-  transition: all 0.6s ease;
+  transition: all 0.6s ease-out;
 }
 
 @mixin ease {
