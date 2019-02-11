@@ -41,14 +41,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #666666;
+    background: black;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.6s ease; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-brand {
-    background: #737373;
+    background: #000;
     transition: all 0.6s ease;
     transform: translate3d(0, 100%, 0); }
     .menu-brand.show {
@@ -66,7 +66,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #ee5f5f; }
+      color: #0cbbde; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -91,6 +91,100 @@
 
 .nav-item:nth-child(4) {
   transition-delay: 0.6s; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #000;
+  color: #f0f0f0;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: -1; }
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 626; }
+  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+    font-size: 6rem; }
+  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 6px;
+    width: fit-content;
+    background: rgba(5, 5, 5, 0.5);
+    border-radius: 15px; }
+
+a {
+  color: #f0f0f0;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+.text-secondary {
+  color: #0cbbde; }
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px); }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #0cbbde;
+        transition: all 0.6s ease; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-template-areas: 'bioimg bio bio' 'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px; }
+  .about-info .bio-image {
+    grid-area: bioimg;
+    margin: auto;
+    border-radius: 50%;
+    border: solid 3px #0cbbde; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #0d0d0d;
+    padding: 0.5rem;
+    border-bottom: #0cbbde 5px solid; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: black;
+  color: #f0f0f0;
+  height: 60px; }
 
 @media screen and (max-width: 768px) {
   main {
@@ -118,69 +212,11 @@
       background: url("../img/portrait.jpg");
       background-size: cover;
       width: 140px;
-      height: 140px; } }
+      height: 140px; }
+  .about-info {
+    grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; } }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  background: #737373;
-  color: #f0f0f0;
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
-  body#bg-img {
-    background: url(../img/background.jpg);
-    background-attachment: fixed;
-    background-size: cover; }
-    body#bg-img:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(115, 115, 115, 0.8);
-      z-index: -1; }
-
-h1, h2, h3 {
-  margin: 0;
-  font-weight: 626; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 6rem; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1 rem;
-    background: rgba(120, 120, 120, 0.5); }
-
-a {
-  color: #f0f0f0;
-  text-decoration: none; }
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%; }
-
-.text-secondary {
-  color: #0cbbde; }
-
-main {
-  padding: 4rem;
-  height: 100%; }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #0cbbde;
-        transition: all 0.6s ease; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
