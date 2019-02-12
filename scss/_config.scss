@@ -51,6 +51,7 @@ $background-opacity: 0.8;
     @return $tertiary-color;
   }
 }
+
 // media query mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {

@@ -79,6 +79,36 @@
       color: #ee5f5f;
       transform: scale(0.9);
       transition: all 0.6s ease-out; }
+  .menu input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden; }
+  .menu label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 200px;
+    height: 100px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative; }
+  .menu label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s; }
+  .menu input:checked + label {
+    background: #ee5f5f; }
+  .menu input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%); }
+  .menu label:active:after {
+    width: 130px; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.15s; }
