@@ -178,6 +178,8 @@ main {
     background: #0d0d0d;
     padding: 0.5rem;
     border-bottom: #ee5f5f 5px solid; }
+    .about-info .job ul {
+      list-style: circle; }
 
 .projects {
   display: grid;

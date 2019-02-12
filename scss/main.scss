@@ -111,6 +111,10 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: set-second-color($primary-color) 5px solid;
+
+    ul {
+      list-style: circle;
+    }
   }
 }
 
