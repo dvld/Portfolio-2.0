@@ -79,6 +79,15 @@
 
 // phones
 @include mediaSm {
+
+  .boxes {
+
+    div {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+
   main {
     padding: 2rem;
 
@@ -91,7 +100,6 @@
       font-size: 3rem;
     }
   }
-
 
   .projects {
     grid-template-columns: 1fr;

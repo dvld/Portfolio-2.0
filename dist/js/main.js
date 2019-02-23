@@ -4,6 +4,15 @@ const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBrand = document.querySelector('.menu-brand');
 const navItems = document.querySelectorAll('.nav-item');
+// const colorMode = document.querySelector('#switch');
+
+// let colorSwitch = false;
+
+// colorMode.addEventListener('click', toggleMode);
+
+// function toggleMode() {
+
+// }
 
 // set initial state of menu
 let showMenu = false;
