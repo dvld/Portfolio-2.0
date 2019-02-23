@@ -80,6 +80,11 @@
 // phones
 @include mediaSm {
 
+  .dev-icons {
+    width: 2rem;
+    height: auto;
+  }
+
   .boxes {
 
     div {
