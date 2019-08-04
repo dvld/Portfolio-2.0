@@ -345,7 +345,7 @@ main {
       width: 140px;
       height: 140px; }
   .about-info {
-    grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
